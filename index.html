@@ -3,8 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Parisa Rabbani | PhD Student, UIUC</title>
-    <meta name="description" content="Parisa Rabbani - PhD Student in Computer Science at UIUC researching AI Safety, LLM Alignment, and Human-AI Collaboration.">
+    <title>Parisa Rabbani | PhD Candidate, UIUC</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="src/icons/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="src/icons/favicon_io/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="src/icons/favicon_io/apple-touch-icon.png">
+    <link rel="manifest" href="src/icons/favicon_io/site.webmanifest">
+    <meta name="description" content="Parisa Rabbani - PhD Candidate in Computer Science at UIUC researching AI Safety, LLM Alignment, and Human-AI Collaboration.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Source+Sans+3:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -96,14 +100,16 @@
         .pub-group-title { font-family: var(--font-serif); font-size: 1.35rem; font-weight: 700; color: var(--ink); margin-bottom: 1rem; padding-bottom: 0.65rem; border-bottom: 1px solid var(--border); }
         .pub-group .pub-list { gap: 1rem; }
         .pub-group .pub-card { border-color: transparent; box-shadow: none; background: transparent; padding: 1rem 0.5rem; border-bottom: 1px solid var(--border); border-radius: 0; }
-        .pub-group .pub-card:last-child { border-bottom: none; padding-bottom: 0; }
+        .pub-group .pub-card:last-child { border-bottom: none; padding-bottom: 0.5rem; }
         .pub-group .pub-card:hover { background: var(--accent-bg); border-radius: var(--radius); border-color: transparent; box-shadow: none; transform: none; }
-        .pub-card { display: grid; grid-template-columns: 100px 1fr; gap: 1.25rem; background: var(--white); border: 1px solid var(--border); border-radius: var(--radius); padding: 1.25rem 1.5rem; transition: all 0.3s; align-items: start; }
+        .pub-card { display: block; background: var(--white); border: 1px solid var(--border); border-radius: var(--radius); padding: 1.25rem 1.5rem; transition: all 0.3s; }
         section.alt .pub-card { background: var(--cream); }
         .pub-card:hover { border-color: var(--accent-soft); box-shadow: var(--shadow-md); transform: translateY(-2px); }
         .pub-thumb { width: 100px; height: 72px; border-radius: 6px; background: var(--cream-dark); overflow: hidden; flex-shrink: 0; display: flex; align-items: center; justify-content: center; }
         .pub-thumb img { width: 100%; height: 100%; object-fit: cover; }
         .pub-thumb-placeholder { font-family: var(--font-mono); font-size: 0.6rem; color: var(--ink-muted); text-align: center; padding: 0.5rem; line-height: 1.3; }
+        .pres-thumb { width: 100%; height: 90px; border-radius: 6px; background: var(--cream-dark); overflow: hidden; margin-bottom: 0.6rem; display: flex; align-items: center; justify-content: center; }
+        .pres-thumb img { width: 100%; height: 100%; object-fit: cover; }
         .pub-body { min-width: 0; }
         .pub-venue { display: inline-block; font-family: var(--font-mono); font-size: 0.68rem; font-weight: 500; text-transform: uppercase; letter-spacing: 0.05em; padding: 0.12rem 0.45rem; border-radius: 4px; margin-bottom: 0.45rem; }
         .pub-venue.review { background: #fef3c7; color: #92400e; }
@@ -259,7 +265,7 @@
 
         /* ===== RESPONSIVE ===== */
         @media (max-width: 900px) { .hero-inner { grid-template-columns: 1fr; gap: 2rem; } .hero-photo { order: -1; justify-self: center; } .photo-frame { width: 190px; height: 235px; } .hero { min-height: auto; padding-top: 6rem; } }
-        @media (max-width: 768px) { .nav-links { display: none; } .nav-toggle { display: block; } section { padding: 3rem 1.25rem; } .project-grid, .compact-grid { grid-template-columns: 1fr; } .pub-card { grid-template-columns: 1fr; } .pub-thumb { width: 100%; height: 56px; } .footer-inner { flex-direction: column; text-align: center; } .about-grid { grid-template-columns: 1fr; } .extras-grid { grid-template-columns: 1fr 1fr; } .photo-gallery { grid-template-columns: repeat(2, 1fr); } }
+        @media (max-width: 768px) { .nav-links { display: none; } .nav-toggle { display: block; } section { padding: 3rem 1.25rem; } .project-grid, .compact-grid { grid-template-columns: 1fr; } .pub-card { } .pub-thumb { width: 100%; height: 56px; } .footer-inner { flex-direction: column; text-align: center; } .about-grid { grid-template-columns: 1fr; } .extras-grid { grid-template-columns: 1fr 1fr; } .photo-gallery { grid-template-columns: repeat(2, 1fr); } }
         @media (max-width: 480px) { .hero-links { flex-direction: column; } .social-row { justify-content: center; } .extras-grid { grid-template-columns: 1fr; } }
     </style>
 </head>
@@ -297,7 +303,7 @@
         <div class="hero-text">
             <h1>Hi, I'm <em>Parisa Rabbani</em></h1>
             <p class="hero-subtitle">
-                I am a PhD student in Computer Science at the University of Illinois Urbana-Champaign, working at the
+                I am a PhD candidate in Computer Science at the University of Illinois Urbana-Champaign, working at the
                 <a href="https://uiuc-conversational-ai-lab.github.io/" target="_blank">Conversational AI Lab</a> with
                 <a href="https://scholar.google.com/citations?hl=en&user=GMcL_9kAAAAJ&view_op=list_works&sortby=pubdate" target="_blank">Prof. Dilek Hakkani-T&#252;r</a>.
                 My research focuses on <strong>AI safety</strong> and <strong>LLM alignment</strong>, especially in dialogue settings.
@@ -311,7 +317,7 @@
                 <span class="tag teal">Human-AI Collaboration</span>
             </div>
             <div class="social-row">
-                <a href="/cdn-cgi/l/email-protection#6b190a09090a0502532b0207070205040218450e0f1e" class="social-pill primary">
+                <a href="/cdn-cgi/l/email-protection#5123303333303f386911383d3d383f3e38227f343524" class="social-pill primary">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
                     Email
                 </a>
@@ -354,10 +360,6 @@
             <h3 class="pub-group-title"><img src="src/icons/shield.png" width="26" height="26" style="vertical-align:-4px;margin-right:6px;">AI Safety and Alignment</h3>
             <div class="pub-list">
                 <div class="pub-card">
-                    <div class="pub-thumb">
-                        <!-- Replace: <img src="thumbs/dialdefer.png" alt="DialDefer"> -->
-                        <span class="pub-thumb-placeholder">thumbnail</span>
-                    </div>
                     <div class="pub-body">
                         <span class="pub-venue review">Under Review</span>
                         <h3 class="pub-title">DialDefer: A Framework for Detecting and Mitigating LLM Dialogic Deference</h3>
@@ -377,7 +379,6 @@
                 </div>
 
                 <div class="pub-card">
-                    <div class="pub-thumb"><span class="pub-thumb-placeholder">thumbnail</span></div>
                     <div class="pub-body">
                         <span class="pub-venue oral">IWSDS'26 Oral</span>
                         <h3 class="pub-title">From Fact to Judgment: Investigating the Impact of Task Framing on LLM Conviction in Dialogue Systems</h3>
@@ -385,8 +386,8 @@
                         <p class="pub-desc">Investigated how task framing affects LLM conviction in dialogue systems. Showed that reframing evaluation from statement verification to speaker judgment significantly reduced model conviction, revealing high sensitivity to social framing across multiple LLMs.</p>
                         <div class="pub-links">
                             <a href="https://arxiv.org/abs/2511.10871" target="_blank" class="pub-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg> Paper</a>
-                            <a href="#" class="pub-link"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg> Code</a>
-                            <a href="#" class="pub-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg> Slides</a>
+                            <a href="https://github.com/LadyPary/llm-conversational-judgment" target="_blank" class="pub-link"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg> Code</a>
+                            <a href="https://drive.google.com/file/d/124TdxpqKHR-g1_NMfZx-dYF2yN7Mifyz/view?usp=sharing" target="_blank" class="pub-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg> Slides</a>
                         </div>
                     </div>
                 </div>
@@ -394,10 +395,9 @@
         </div>
 
         <div class="pub-group fade-in">
-            <h3 class="pub-group-title"><img src="src/icons/humanAIcolab.png" width="26" height="26" style="vertical-align:-4px;margin-right:6px;">Human-AI Collaboration</h3>
+            <h3 class="pub-group-title"><img src="src/icons/humanAIcolab.png" width="32" height="32" style="vertical-align:-5px;margin-right:6px;">Human-AI Collaboration</h3>
             <div class="pub-list">
                 <div class="pub-card">
-                    <div class="pub-thumb"><span class="pub-thumb-placeholder">thumbnail</span></div>
                     <div class="pub-body">
                         <span class="pub-venue review">Preprint</span>
                         <h3 class="pub-title">Toward Socially-Aware LLMs: A Survey of Multimodal Approaches to Human Behavior Understanding</h3>
@@ -410,28 +410,26 @@
                 </div>
 
                 <div class="pub-card">
-                    <div class="pub-thumb"><span class="pub-thumb-placeholder">thumbnail</span></div>
                     <div class="pub-body">
                         <span class="pub-venue published">AIED'25</span>
                         <h3 class="pub-title">AI-Enhanced Speech-Language Intervention Documentation: Opportunities and Design Goals</h3>
                         <p class="pub-authors">Q. Zheng, A. Choudhry, Z. Liu, <strong>Parisa Rabbani</strong>, et al. AIED 2025.</p>
                         <p class="pub-desc">Identified design opportunities and goals for AI-assisted documentation in speech-language intervention through interviews and co-design sessions with clinical practitioners.</p>
                         <div class="pub-links">
-                            <a href="#" class="pub-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg> Paper</a>
+                            <a href="https://link.springer.com/chapter/10.1007/978-3-031-98465-5_17" target="_blank" class="pub-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg> Paper</a>
                         </div>
                     </div>
                 </div>
 
                 <div class="pub-card">
-                    <div class="pub-thumb"><span class="pub-thumb-placeholder">thumbnail</span></div>
                     <div class="pub-body">
                         <span class="pub-venue published">CSCW'24</span>
                         <h3 class="pub-title">SOAP.AI: Documenting Human Behavior in Videos through Multimodal Generative AI</h3>
                         <p class="pub-authors">Q. Zheng, <strong>Parisa Rabbani</strong>, Y-R. Lin, D. Mansour, Y. Huang. CSCW Companion '24.</p>
                         <p class="pub-desc">Developed a human-AI collaborative system for documenting child behavior in therapy videos using GPT-4V and Whisper, in collaboration with the <a href="https://aieducation.illinois.edu/" target="_blank">AI Institute for Exceptional Education</a>. Designed with 17 speech-language pathologists through an expert-in-the-loop approach with automatic prompt engineering from clinician preferences.</p>
                         <div class="pub-links">
-                            <a href="#" class="pub-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg> Paper</a>
-                            <a href="#" class="pub-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8"/></svg> Demo</a>
+                            <a href="https://dl.acm.org/doi/10.1145/3678884.3681819" target="_blank" class="pub-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg> Paper</a>
+                            <a href="https://www.youtube.com/watch?v=u-K9eYRVucs" target="_blank" class="pub-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8"/></svg> Demo</a>
                         </div>
                     </div>
                 </div>
@@ -450,19 +448,19 @@
                 <p class="project-course">CS 598 &middot; Spring 2025</p>
                 <h3 class="project-title">LLMs and Lost Translations</h3>
                 <p class="project-desc">Evaluated GPT-4o and Gemini on 180 CrowS-Pairs sentences across 4 languages using embedding-based bias metrics. Found bias shifts in up to 90% of gender-related translations (Russian) and 90% of religion-related translations (Korean).</p>
-                <div class="pub-links" style="margin-top:0.45rem;"><a href="#" class="pub-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg> Paper</a></div>
+                <div class="pub-links" style="margin-top:0.45rem;"><a href="https://drive.google.com/file/d/1zIAz35ftgOiPJ8zTNm6z0lagvt9Wt5vW/view" target="_blank" class="pub-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg> Paper</a></div>
             </div>
             <div class="project-card fade-in">
                 <p class="project-course">CS 598 &middot; Fall 2024</p>
                 <h3 class="project-title">Deciphering the Digital Zeitgeist</h3>
                 <p class="project-desc">Studied the effect of AI integration on platform trust by analyzing 68k Reddit comments using SBERT classification and Poisson regression. Found a 26% decrease in competence distrust post-Meta AI launch, with tech subreddits exhibiting higher competence concerns vs. non-tech communities focusing on sincerity.</p>
-                <div class="pub-links" style="margin-top:0.45rem;"><a href="#" class="pub-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg> Paper</a></div>
+                <div class="pub-links" style="margin-top:0.45rem;"><a href="https://drive.google.com/file/d/1g6U-zeHHfTWthxTg8BxmhplAeYCcFkx-/view" target="_blank" class="pub-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg> Paper</a></div>
             </div>
             <div class="project-card fade-in">
                 <p class="project-course">CS 467 &middot; Spring 2024</p>
                 <h3 class="project-title">The Many Faces of Computer Science</h3>
                 <p class="project-desc">Visualized CS faculty diversity using ML-generated facial composites from 3,900+ images across 48 U.S. universities. Found 67% masculine representation overall; top-ranked institutions predominantly reflect white male features, while minority-serving institutions mirror their student body demographics.</p>
-                <div class="pub-links" style="margin-top:0.45rem;"><a href="#" class="pub-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg> Paper</a></div>
+                <div class="pub-links" style="margin-top:0.45rem;"><a href="https://drive.google.com/file/d/1QWtVun3-Bln5NXMAzjGVWN2GSVoxliNy/view" target="_blank" class="pub-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg> Paper</a></div>
             </div>
         </div>
     </div>
@@ -475,31 +473,24 @@
         <h2 class="section-title fade-in">Presentations</h2>
         <div class="compact-grid">
             <div class="compact-card fade-in">
-                <div class="pub-thumb" style="width:100%;height:80px;margin-bottom:0.6rem;border-radius:6px;"><span class="pub-thumb-placeholder">thumbnail</span></div>
+                <div class="pres-thumb"><img src="src/thumbs/dialdefer_amazon.JPG" alt="DialDefer poster"></div>
                 <p class="compact-label">Invited Poster &middot; 2026</p>
                 <p class="compact-title">DialDefer: Detecting Dialogic Deference in LLM Judges</p>
                 <p class="compact-sub">Amazon Trusted AI Symposium</p>
-                <div class="pub-links" style="margin-top:0.45rem;"><a href="#" class="pub-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg> Poster</a></div>
+                <div class="pub-links" style="margin-top:0.45rem;"><a href="https://drive.google.com/file/d/1zhQK53sJH3165vNWGT1fNtuyrnmG01ry/view" target="_blank" class="pub-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg> Poster</a></div>
             </div>
             <div class="compact-card fade-in">
-                <div class="pub-thumb" style="width:100%;height:80px;margin-bottom:0.6rem;border-radius:6px;"><span class="pub-thumb-placeholder">thumbnail</span></div>
+                <div class="pres-thumb"><img src="src/thumbs/aice2025.png" alt="AICE poster"></div>
                 <p class="compact-label">Poster &middot; 2025</p>
                 <p class="compact-title">Conversational Judgment Sycophancy</p>
                 <p class="compact-sub">Amazon-UIUC AICE Fall Symposium</p>
-                <div class="pub-links" style="margin-top:0.45rem;"><a href="#" class="pub-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg> Poster</a></div>
+                <div class="pub-links" style="margin-top:0.45rem;"><a href="https://drive.google.com/file/d/1h5KbbWm23AaZCAP_m26k66P6vYKDw7Qk/view" target="_blank" class="pub-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg> Poster</a></div>
             </div>
             <div class="compact-card fade-in">
-                <div class="pub-thumb" style="width:100%;height:80px;margin-bottom:0.6rem;border-radius:6px;"><span class="pub-thumb-placeholder">thumbnail</span></div>
+                <div class="pres-thumb"><img src="src/thumbs/AI4ExcepKids.png" alt="AI Institute presentation"></div>
                 <p class="compact-label">Oral &middot; 2024</p>
                 <p class="compact-title">Designing for Human Behavior Analysis using Multi-Modal AI</p>
                 <p class="compact-sub">AI Institute for Exceptional Education Workshop</p>
-            </div>
-            <div class="compact-card fade-in">
-                <div class="pub-thumb" style="width:100%;height:80px;margin-bottom:0.6rem;border-radius:6px;"><span class="pub-thumb-placeholder">thumbnail</span></div>
-                <p class="compact-label" style="color:#166534;">Best Presentation Award &middot; 2017</p>
-                <p class="compact-title">FMC-LIFE: Smart Games for Autism & Alzheimer's</p>
-                <p class="compact-sub">RoboCup Iran Open</p>
-                <div class="pub-links" style="margin-top:0.45rem;"><a href="#" class="pub-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg> Page</a></div>
             </div>
         </div>
     </div>
@@ -533,13 +524,13 @@
                 <p class="compact-label">Spring 2025</p>
                 <p class="compact-title">Girls Who Code Spotlight Speaker</p>
                 <p class="compact-sub">HCI research presentation to middle school students.</p>
-                <div class="pub-links" style="margin-top:0.45rem;"><a href="#" class="pub-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg> Slides</a></div>
+                <div class="pub-links" style="margin-top:0.45rem;"><a href="https://drive.google.com/file/d/1chwiOyCFKpSdRIXzYYarWJwpP-A7abVq/view" target="_blank" class="pub-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg> Slides</a></div>
             </div>
             <div class="compact-card fade-in">
                 <p class="compact-label">Spring 2024, 2025</p>
                 <p class="compact-title">CS Visit Days Graduate Ambassador</p>
                 <p class="compact-sub">Diversity @ Illinois sessions and Q&As for prospective international PhD students.</p>
-                <div class="pub-links" style="margin-top:0.45rem;"><a href="#" class="pub-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg> Slides</a></div>
+                <div class="pub-links" style="margin-top:0.45rem;"><a href="https://drive.google.com/file/d/1_6UQ9GtDWcSRqO9bt_hToiBTSvuRGyL3/view" target="_blank" class="pub-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg> Slides</a></div>
             </div>
             <div class="compact-card fade-in">
                 <p class="compact-label">2021 - 2022</p>
@@ -598,14 +589,14 @@
     <div class="footer-inner">
         <div>
             <p class="footer-name">Parisa Rabbani</p>
-            <p style="font-size:0.85rem;">PhD Student, CS @ UIUC</p>
-            <p style="margin-top:0.35rem;"><a href="/cdn-cgi/l/email-protection#f68497949497989fceb69f9a9a9f98999f85d8939283" style="color:var(--accent-soft);"><span class="__cf_email__" data-cfemail="9ae8fbf8f8fbf4f3a2daf3f6f6f3f4f5f3e9b4fffeef">[email&#160;protected]</span></a></p>
+            <p style="font-size:0.85rem;">PhD Candidate, CS @ UIUC</p>
+            <p style="margin-top:0.35rem;"><a href="/cdn-cgi/l/email-protection#e092818282818e89d8a0898c8c898e8f8993ce858495" style="color:var(--accent-soft);"><span class="__cf_email__" data-cfemail="4537242727242b2c7d052c29292c2b2a2c366b202130">[email&#160;protected]</span></a></p>
         </div>
         <div class="footer-social">
             <a href="https://github.com/LadyPary" target="_blank" aria-label="GitHub"><svg viewBox="0 0 24 24"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg></a>
             <a href="https://scholar.google.com/citations?user=cwlvsZUAAAAJ&hl=en" target="_blank" aria-label="Scholar"><svg viewBox="0 0 24 24"><path d="M5.242 13.769L0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z"/></svg></a>
             <a href="https://www.linkedin.com/in/parisarabbani/" target="_blank" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
-            <a href="/cdn-cgi/l/email-protection#572536353536393e6f173e3b3b3e39383e2479323322" aria-label="Email"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></a>
+            <a href="/cdn-cgi/l/email-protection#d3a1b2b1b1b2bdbaeb93babfbfbabdbcbaa0fdb6b7a6" aria-label="Email"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></a>
         </div>
     </div>
 </footer>
@@ -623,11 +614,4 @@
     document.querySelectorAll('.fade-in').forEach(el => obs.observe(el));
     // Smooth scroll for nav links
     document.querySelectorAll('a[href^="#"]').forEach(a => {
-        a.addEventListener('click', e => {
-            const t = document.querySelector(a.getAttribute('href'));
-            if (t) { e.preventDefault(); t.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
-        });
-    });
-    // Active nav highlight on scroll
-    const sections = document.querySelectorAll('section[id]');
-    const navLinks = documen
+        a.addEventListener('
