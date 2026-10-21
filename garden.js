@@ -5,7 +5,7 @@
 var flowerTemplateHTML = $('#flower_template').html();
 
 var garden_height = 360;
-const plantWidth = 400;
+const plantWidth = 320;
 var root_stem_height = 50;
 var root_offset = 46;
 var stem_height = 64;
@@ -36,14 +36,21 @@ function build_garden(papers) {
         }
     }
 
-    var content_width = plantWidth*research_garden.length+100;
+    var content_width = plantWidth*research_garden.length+120;
     // Use the container width (capped to the page) so we don't force horizontal scroll on wide desktops.
     var viewport_width = $('#garden_container').width() || $(window).width();
     var garden_width = Math.max(content_width, viewport_width);
-    garden_x_offset = (garden_width - content_width) / 2;
+    // Keep at least 45px of margin so the leftmost labels aren't clipped
+    garden_x_offset = Math.max((garden_width - content_width) / 2, 45);
     $('#garden').width(garden_width).height(garden_height);
 
     renderGarden();
+
+    // If the garden is only slightly wider than its container, scale it down to fit
+    // instead of forcing a horizontal scroll. Narrow screens keep the scroll so text stays legible.
+    if (content_width > viewport_width && viewport_width >= content_width * 0.75) {
+        $('#garden').attr('viewBox', `0 0 ${garden_width} ${garden_height}`).css({ width: '100%', height: 'auto' });
+    }
 }
 
 var flower_positions = {};
